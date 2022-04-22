@@ -1,16 +1,26 @@
-### Hi there 👋
+## Hi, I'm Adeleke Adeniji
 
-<!--
-**eazylaykzy/eazylaykzy** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+```go
+package main
 
-Here are some ideas to get you started:
+type Me struct {
+	Name   string
+	Job    string
+	Code   string
+	Skills string
+}
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+func main() {
+	me := &Me{
+		Name:   "Adeleke Adeniji",
+		Job:    "Software Engineer",
+		Code:   "Go, JavaScript and others",
+    		Skills: "RESTful API, CI/CD, Linux systems, monitoring..."
+	}
+	_ = me
+}
+```
+
+## GitHub Stats
+![GitHub stats](https://github-readme-stats.vercel.app/api?username=eazylaykzy&show_icons=true&disable_animations=false&theme=dark&include_all_commits=true&count_private=true)
+![Top languages](https://github-readme-stats.vercel.app/api/top-langs/?username=eazylaykzy&layout=compact&show_icons=true&theme=dark&exclude_repo=theta-wallet-web,idea-sorting-app,30-seconds-of-code,awesome-selfhosted,node-chat-app,react-material-design-admin-dashboard,omnifood&langs_count=8)
