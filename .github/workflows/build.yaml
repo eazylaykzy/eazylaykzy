@@ -1,0 +1,54 @@
+name: README build
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - today.py
+      - profile_card.py
+      - profile.json
+      - dark_mode.svg
+      - light_mode.svg
+      - cache/requirements.txt
+      - .github/workflows/build.yaml
+  schedule:
+    - cron: "0 4 * * *"
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: profile-build
+  cancel-in-progress: false
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v6
+        with:
+          fetch-depth: 1
+      - name: Set up Python
+        uses: actions/setup-python@v6
+        with:
+          python-version: '3.12'
+          cache: 'pip'
+          cache-dependency-path: 'cache/requirements.txt'
+      - name: Install dependencies
+        run: python -m pip install -r cache/requirements.txt
+      - name: Update README file
+        env:
+          ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN || github.token }}
+          USER_NAME: ${{ github.repository_owner }}
+        run: python today.py
+      - name: Commit updated profile
+        run: |-
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git config user.name "github-actions[bot]"
+          git add dark_mode.svg light_mode.svg cache/*.txt
+          if git diff --cached --quiet; then
+            echo "Profile is already up to date."
+            exit 0
+          fi
+          git commit -m "Update profile stats"
+          git push

@@ -1,0 +1,27 @@
+{
+  "username": "eazylaykzy",
+  "birthday": null,
+  "sections": [
+    [
+      ["Name", "Adeleke Adeniji"],
+      ["OS", "macOS, iOS, Linux"],
+      ["Role", "Software Engineer (Backend/DevOps)"],
+      ["IDE", "GoLand, WebStorm (JetBrains)"]
+    ],
+    [
+      ["Languages", "Go, JavaScript, TypeScript"],
+      ["Data", "SQL, NoSQL"],
+      ["Focus", "APIs, CI/CD, observability"]
+    ],
+    [
+      ["Hobbies.Software", "DevOps, SWE, iOS, Jailbreaking"],
+      ["Hobbies.Hardware", "Networking, LAN pinging"],
+      ["Hobbies.Science", "Mathematics, Physics"]
+    ]
+  ],
+  "contacts": [
+    ["Email.Personal", "adelekeadenijio@gmail.com"],
+    ["Email.Alternate", "codesurgeio@gmail.com"],
+    ["LinkedIn", "adelekeadeniji"]
+  ]
+}

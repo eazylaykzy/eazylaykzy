@@ -1,30 +1,7 @@
-## Hi, I'm Adeleke Adeniji
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="./dark_mode.svg">
+  <source media="(prefers-color-scheme: light)" srcset="./light_mode.svg">
+  <img src="./light_mode.svg" alt="Adeleke Adeniji — backend and DevOps engineer. Go, JavaScript, TypeScript, SQL and NoSQL. macOS, iOS, Linux; GoLand and WebStorm. Interests: DevOps, software engineering, iOS, jailbreaking, networking, mathematics and physics. GitHub: eazylaykzy." width="100%">
+</picture>
 
-```go
-package main
-
-type Me struct {
-	Name   string
-	Job    string
-	Code   string
-	Skills string
-}
-
-func main() {
-	me := &Me{
-		Name:   "Adeleke Adeniji Oluwafemi",
-		Job:    "Software Engineer (Backend/DevOps)",
-		Code:   "Go (Golang), JavaScript, TypeScript, SQL, NoSQL and others",
-		Skills: "RESTful API, CI/CD, monitoring, tracing, logging, profiling, automation, orchestration, and APMs"
-	}
-	_ = me
-}
-```
-
-## &#x1f4c8; GitHub Stats
-![GitHub stats](https://github-readme-stats.vercel.app/api?username=eazylaykzy&show_icons=true&disable_animations=false&theme=dark&include_all_commits=true&count_private=true)
-![Top languages](https://github-readme-stats.vercel.app/api/top-langs/?username=eazylaykzy&layout=compact&show_icons=true&theme=dark&exclude_repo=theta-wallet-web,idea-sorting-app,30-seconds-of-code,awesome-selfhosted,node-chat-app,react-material-design-admin-dashboard,omnifood&langs_count=12)
-
----
-
-![Visitor Count](https://profile-counter.glitch.me/eazylaykzy/count.svg)
+[Personal email](mailto:adelekeadenijio@gmail.com) · [Alternate email](mailto:codesurgeio@gmail.com) · [LinkedIn](https://www.linkedin.com/in/adelekeadeniji/)
