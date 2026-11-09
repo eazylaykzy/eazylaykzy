@@ -171,9 +171,7 @@ def graph_repos_stars(count_type, owner_affiliation):
                 edges {
                     node {
                         ... on Repository {
-                            stargazers {
-                                totalCount
-                            }
+                            stargazerCount
                         }
                     }
                 }
@@ -523,7 +521,7 @@ def force_close_file(cache_rows, cache_header):
 def stars_counter(edges):
     total_stars = 0
     for edge in edges:
-        total_stars += edge["node"]["stargazers"]["totalCount"]
+        total_stars += edge["node"]["stargazerCount"]
     return total_stars
 
 
